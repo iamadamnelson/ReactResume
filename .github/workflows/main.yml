@@ -1,0 +1,43 @@
+name: Blob storage website CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    # --- START OF REQUIRED BUILD STEPS ---
+
+    # 1. Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20' # Recommended stable Node version
+
+    # 2. Install dependencies and run the React build
+    - name: Install dependencies and build
+      run: |
+        npm install
+        npm run build # This command generates the production files in the 'build' folder
+
+    # --- END OF REQUIRED BUILD STEPS ---
+
+    - uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+            # Source folder is now 'build' (the output of npm run build)
+            az storage blob upload-batch --account-name anelsonstorage --auth-mode key -d '$web' -s build --overwrite
+            
+    - name: logout
+      run: |
+            az logout
+      if: always()
