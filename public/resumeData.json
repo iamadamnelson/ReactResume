@@ -1,0 +1,27 @@
+{
+  "main": {
+    "name": "Adam Nelson",
+    "occupation": "",
+    "description": "A dedicated and results-oriented professional with extensive skills in engineering, technology, and data. I specialize in leveraging data to drive business process improvements and modernize operations, bringing a unique, disciplined approach to every technical challenge",
+    "image": "profilepic.jpg",
+    "bio": "I've always been fascinated by Engineering, Technology, and Data. I've spent the majority of the last twenty years working for the U.S. Army in varying capacities, refining a vast skillset to assist in engineering challenges, troubleshoot technical issues, and deliver solutions through business process improvements and modernizing operations. I hope this website will give you a glimpse into my professional life, some of my skills, and provide you with insight into my unique background and experiences. I've embedded an interactive Power BI dashboard below in the Resume section to provide a dynamic look at my professional experience. Feel free to explore the data below or download a traditional copy of my resume in .pdf or .docx format.",
+    "contactmessage": "I welcome you to contact me to leave feedback or to discuss how I can contribute to your team.",
+    "email": "iamadamnelson@gmail.com",
+    "phone": "(414)-534-2604",
+    "address": {
+      "street": "13150 Fortner St",
+      "city": "Newton",
+      "state": "Alabama",
+      "zip": "36352"
+    },
+    "website": "https://www.iamadamnelson.com",
+    "resumedownloadpdf": "https://www.iamadamnelson.com/files/Adam%20Nelson%20Resume.pdf",
+    "resumedownloaddocx": "https://www.iamadamnelson.com/files/Adam%20Nelson%20Resume.docx"
+  },
+  "resume": {
+    "title": "PowerBI Resume",
+    "description": "This interactive Power BI dashboard demonstrates my data analysis and visualization skills.",
+    "reportId": "0fb04107-dda8-479f-a73d-1c71fef8b5e2",
+    "embedUrl": "https://app.powerbi.com/view?r=eyJrIjoiMGZiMDQxMDctZGRhOC00NzlmLWE3M2QtMWM3MWZlZThiNWUyIiwidCI6IjYzMGE3NGI0LWFmOWEtNDVlNi1iOTU3LWM0NGQ5YmE5ZTVkOCJ9"
+  }
+}
