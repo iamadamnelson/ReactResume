@@ -41,7 +41,7 @@ class Header extends Component {
     // List of navigation items
     const navItems = [
       { id: 'home', label: 'Home' },
-      { id: 'about', label: 'About' },
+      // { id: 'about', label: 'About' },
       { id: 'resume', label: 'Resume' },
       { id: 'contact', label: 'Contact' },
     ];
@@ -68,17 +68,17 @@ class Header extends Component {
         </nav>
 
         {/* ... (rest of your component content) ... */}
-        <div className="row banner">
+{/*         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I am {name}.</h1>
             <h3>{description}.</h3>
             <hr />
           </div>
-        </div>
+        </div> */}
 
-        <p className="scrolldown">
+        {/* <p className="scrolldown">
           <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-        </p>
+        </p> */}
       </header>
     );
   }

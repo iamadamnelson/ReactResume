@@ -70,7 +70,7 @@ function Contact(props) {
           <div id="message-warning"> Error</div>
         </div>
 
-        <aside className="four columns footer-widgets">
+        {/* <aside className="four columns footer-widgets">
           <div className="widget widget_contact">
             <h4>Contact Details</h4>
             <p className="address">
@@ -78,7 +78,7 @@ function Contact(props) {
               <span>{email}</span>
             </p>
           </div>
-        </aside>
+        </aside> */}
       </div>
     </section>
   );

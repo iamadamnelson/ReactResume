@@ -17,6 +17,9 @@ const PowerBIResume = () => {
           </div>
         </div>
       </div>
+      <p className="scrolldown">
+          <a className="smoothscroll" href="#contact"><i className="icon-down-circle"></i></a>
+        </p>
     </section>
   );
 };

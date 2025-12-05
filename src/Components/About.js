@@ -26,7 +26,7 @@ class About extends Component {
             <img className="profile-pic" src={profilepic} alt="Profile Pic" />
           </div>
           <div className="nine columns main-col">
-            <h2>About Me</h2>
+            <h2>A d a m   N e l s o n</h2>
             <p>{bio}</p>
             <div className="row">
 {/*               <div className="columns contact-details">
@@ -55,6 +55,9 @@ class About extends Component {
             </div>
           </div>
         </div>
+        <p className="scrolldown">
+          <a className="smoothscroll" href="#resume"><i className="icon-down-circle"></i></a>
+        </p>
       </section>
     );
   }
