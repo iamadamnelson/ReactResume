@@ -17,7 +17,7 @@ export const Home: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <h2 className="text-primary-500 font-semibold tracking-wide uppercase text-sm mb-4">
-              Data, design, engineering and technology specialst
+              Data, design, engineering and technology specialist
             </h2>
             <h1 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-zinc-200 to-zinc-500 mb-6 leading-tight">
               I am Adam Nelson.
@@ -46,7 +46,7 @@ export const Home: React.FC = () => {
 
             <div className="mt-12 flex gap-6 justify-center lg:justify-start">
               {/* <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Github size={24} /></a> */}
-              <a href="linkedin.com/in/adam-w-nelson" className="text-zinc-500 hover:text-white transition-colors"><Linkedin size={24} /></a>
+              <a href="http://www.linkedin.com/in/adam-w-nelson" className="text-zinc-500 hover:text-white transition-colors"><Linkedin size={24} /></a>
               {/* <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Twitter size={24} /></a> */}
             </div>
           </motion.div>
