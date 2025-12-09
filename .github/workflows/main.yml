@@ -35,7 +35,7 @@ jobs:
       with:
         inlineScript: |
             # Source folder is now 'build' (the output of npm run build)
-            az storage blob upload-batch --account-name anelsonstorage --auth-mode key -d '$web' -s build --overwrite
+            az storage blob upload-batch --account-name anelsonstorage --auth-mode key -d '$web' -s dist --overwrite
             
     - name: logout
       run: |
