@@ -40,7 +40,7 @@ export const Resume: React.FC = () => {
             <h3 className="text-xl font-semibold text-white mb-4">Interactive Resume</h3>
             <p className="text-zinc-400 mb-4 text-sm leading-relaxed">
               Instead of a document, I've visualized my experience using Microsoft Power BI. 
-              Interact with the dashboard to explore my skills and experience. Or downlaod a
+              Interact with the dashboard to explore my skills and experience. Or download a
               tradional copy of my resume in .doxc or .pdf file above.
             </p>
 {/*             <ul className="space-y-3 text-sm text-zinc-300">
