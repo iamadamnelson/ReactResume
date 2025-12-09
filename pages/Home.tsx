@@ -23,7 +23,10 @@ export const Home: React.FC = () => {
               I am Adam Nelson.
             </h1>
             <p className="text-zinc-400 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-              Highly accomplished and versatile Engineering and IT professional with a proven history of success in mission-critical environments. As a U.S. Army Veteran and former DoD Civil Servant with an active T3 Secret Clearance, my career has been defined by a commitment to service and ensuring mission success. Seeking a strategic role that leverages my extensive expertise in design, data, engineering, software, and technology to solve highly complex, multi-disciplinary technical challenges and deliver high-impact, transformative results.
+              Highly accomplished and versatile Engineering and IT professional with a proven history of success in mission-critical environments. 
+              As a U.S. Army Veteran and former DoD Civil Servant with an active T3 Secret Clearance, my career has been defined by a commitment 
+              to service and ensuring mission success. Seeking a strategic role that leverages my extensive expertise to solve highly complex, 
+              multi-disciplinary technical challenges and deliver high-impact, transformative results.
             </p>
 
 {/*             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
