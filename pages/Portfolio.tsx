@@ -1,34 +1,41 @@
 import React from 'react';
 import { PageTransition } from '../components/PageTransition';
-import { ExternalLink, Github, Code2 } from 'lucide-react';
+import { ExternalLink, Github, Code2, ArrowRight, Layers } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Project } from '../types';
 
-const projects: Project[] = [
-  {
+// specific data for the 4 independent projects
+export const projects: Project[] = [
+  /* {
     id: '1',
-    title: 'Azure Cloud Dashboard',
-    description: 'A comprehensive cloud resource management dashboard built for enterprise scale. Features real-time cost analysis and resource health monitoring using Azure Monitor API.',
-    technologies: ['React', 'TypeScript', 'Tailwind', 'Recharts', 'Azure SDK'],
+    title: 'Azure Cloud Resume',
+    description: 'An Azure cloud resume built to showcase my experience, skills and portfolio. This website features source control and CI/CD through GitHub, a custom DNS through Cloudfare, and security through Azure CDN.',
+    technologies: ['React', 'TypeScript', 'Tailwind', 'HTML', 'CSS', 'Azure', 'GitHub', 'Cloudfare'],
     imageUrl: 'https://picsum.photos/600/400?random=1',
-    link: 'https://example.com',
-    repo: 'https://github.com'
+    link: '/portfolio/project-1', // Internal Route
+    liveUrl: 'https://www.iamadamnelson.com', // External Live Demo
+    repo: 'https://github.com/iamadamnelson/ReactResume'
   },
-  {
+{
     id: '2',
-    title: 'FinTech Analytics Platform',
-    description: 'High-performance trading interface with sub-millisecond updates. Implements WebSockets for live data and WebGL for rendering complex financial charts.',
-    technologies: ['Next.js', 'WebGL', 'Node.js', 'Redis'],
+    title: 'Smart Home Digital Twin',
+    description: 'A fully interactive 3D Digital Twin of my residential smart home. This dashboard integrates real-time IoT telemetry (temperature, energy, occupancy) onto a spatially accurate architectural model. It features a custom WebGL rendering engine built with React Three Fiber, allowing me to monitor home security, control smart devices, and visualize data in a browser-based 3D environment.',
+    technologies: ['React Three Fiber', 'Three.js', 'TypeScript', 'WebGL', 'Azure IoT', 'Tailwind CSS'],
     imageUrl: 'https://picsum.photos/600/400?random=2',
-    link: 'https://example.com',
+    link: '/portfolio/project-2', // Internal Route
+    liveUrl: 'https://www.iamadamnelson.com/portfolio/project-2/', // External Live Demo
+    repo: 'https://github.com/iamadamnelson/'
   },
   {
     id: '3',
-    title: 'E-Commerce AI Recommendation',
+    title: 'E-Commerce Recommendation Engine',
     description: 'A headless e-commerce frontend integrated with a Python-based machine learning engine to provide personalized product recommendations.',
     technologies: ['React', 'Python', 'TensorFlow', 'GraphQL'],
     imageUrl: 'https://picsum.photos/600/400?random=3',
-    repo: 'https://github.com'
+    link: '/portfolio/project-3', // Internal Route
+    liveUrl: 'https://shop.iamadamnelson.com', // External Live Demo
+    repo: 'https://github.com/adamnelson/ecommerce-ai'
   },
   {
     id: '4',
@@ -36,107 +43,108 @@ const projects: Project[] = [
     description: 'Cross-platform mobile application for tracking patient vitals and medication adherence. Compliant with HIPAA standards.',
     technologies: ['React Native', 'Firebase', 'Redux Toolkit'],
     imageUrl: 'https://picsum.photos/600/400?random=4',
-    link: 'https://example.com',
-  },
-  {
-    id: '5',
-    title: 'Smart Home Controller',
-    description: 'IoT interface for managing smart home devices. Features drag-and-drop automation builder and voice command integration.',
-    technologies: ['Vue.js', 'MQTT', 'Tailwind CSS'],
-    imageUrl: 'https://picsum.photos/600/400?random=5',
-    link: 'https://example.com',
-    repo: 'https://github.com'
-  }
+    link: '/portfolio/project-4', // Internal Route
+    liveUrl: 'https://healthvitals.iamadamnelson.com', // External Live Demo
+    repo: 'https://github.com/adamnelson/health-vitals'
+  } */
 ];
 
 export const Portfolio: React.FC = () => {
   return (
     <PageTransition>
-      <div className="max-w-5xl mx-auto">
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">Featured Projects</h1>
-          <p className="text-zinc-400 max-w-2xl">
-            A selection of my recent work in web development, data visualization, and UI design.
-          </p>
-        </div>
+      <div className="relative min-h-screen">
+        
+        <div className="relative z-10 max-w-6xl mx-auto pb-12">
+          <div className="mb-12">
+            <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Portfolio</h1>
+{            <p className="text-zinc-700 dark:text-zinc-300 max-w-2xl font-medium text-lg">
+              Coming Soon! {/* A selection of my recent work in web development, data visualization, and UI design. */}
+            </p>}
+          </div>
 
-        <div className="space-y-24">
-          {projects.map((project, index) => (
-            <motion.div 
-              key={project.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center group`}
-            >
-              {/* Image Section */}
-              <div className="w-full lg:w-1/2">
-                <div className="relative rounded-xl overflow-hidden shadow-2xl border border-zinc-800 bg-zinc-900 aspect-video group-hover:shadow-primary-900/20 transition-all duration-500">
-                   <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
-                   <img 
-                    src={project.imageUrl} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
+          <div className="space-y-24">
+            {projects.map((project, index) => (
+              <motion.div 
+                key={project.id}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center group`}
+              >
+                {/* Image Section */}
+                <div className="w-full lg:w-1/2">
+                  <div className="relative rounded-xl overflow-hidden shadow-2xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 aspect-video group-hover:shadow-primary-500/20 transition-all duration-500">
+                     <div className="absolute inset-0 bg-black/10 dark:bg-black/40 group-hover:bg-transparent transition-colors duration-300 z-10" />
+                     <img 
+                      src={project.imageUrl} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* Content Section */}
-              <div className="w-full lg:w-1/2 space-y-4">
-                <div className="flex items-center gap-2 text-primary-400 text-sm font-semibold tracking-wider uppercase">
-                   <Code2 size={16} />
-                   <span>Project 0{index + 1}</span>
-                </div>
-                
-                <h3 className="text-3xl font-bold text-white group-hover:text-primary-300 transition-colors">
-                  {project.title}
-                </h3>
-                
-                <p className="text-zinc-400 leading-relaxed text-lg">
-                  {project.description}
-                </p>
+                {/* Content Section */}
+                <div className="w-full lg:w-1/2 space-y-4">
+                  <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400 text-sm font-bold tracking-wider uppercase">
+                     <Code2 size={16} />
+                     <span>Project 0{index + 1}</span>
+                  </div>
+                  
+                  <h3 className="text-3xl font-bold text-zinc-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed text-lg font-medium">
+                    {project.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {project.technologies.map((tech) => (
-                    <span 
-                      key={tech} 
-                      className="px-3 py-1 bg-zinc-800/50 border border-zinc-700 text-zinc-300 rounded-full text-xs"
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {project.technologies.map((tech) => (
+                      <span 
+                        key={tech} 
+                        className="px-3 py-1 bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-full text-xs font-semibold"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Buttons Section - Updated to 3 Buttons */}
+                  <div className="flex flex-wrap gap-4 pt-6">
+                    {/* 1. View Project Details (Internal) */}
+                    <Link 
+                      to={project.link || '#'}
+                      className="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 dark:bg-white text-white dark:text-black rounded-lg font-bold hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-all shadow-lg"
                     >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                      View Project Details <ArrowRight size={16} />
+                    </Link>
 
-                <div className="flex items-center gap-6 pt-6">
-                  {project.link && (
+                    {/* 2. Live Demo (External) */}
                     <a 
-                      href={project.link} 
-                      target="_blank" 
+                      href={project.liveUrl || '#'} 
+                      target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-white hover:text-primary-400 font-medium transition-colors border-b border-transparent hover:border-primary-400 pb-0.5"
+                      className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-lg font-bold hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all shadow-sm"
                     >
                       Live Demo <ExternalLink size={16} />
                     </a>
-                  )}
-                  {project.repo && (
+
+                    {/* 3. Source Code (External) */}
                     <a 
                       href={project.repo} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-zinc-400 hover:text-white font-medium transition-colors"
+                      className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-lg font-bold hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all shadow-sm"
                     >
                       Source Code <Github size={16} />
                     </a>
-                  )}
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        
-        <div className="mt-24 text-center pb-12">
-            <p className="text-zinc-500">More projects available on <a href="#" className="text-primary-400 hover:underline">GitHub</a></p>
+              </motion.div>
+            ))}
+          </div>
+          
         </div>
       </div>
     </PageTransition>

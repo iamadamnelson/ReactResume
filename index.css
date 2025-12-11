@@ -8,18 +8,19 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #18181b; 
+  background: transparent; 
 }
 ::-webkit-scrollbar-thumb {
-  background: #3f3f46; 
+  @apply bg-zinc-400 dark:bg-zinc-700;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #52525b; 
+  @apply bg-zinc-500 dark:bg-zinc-600;
 }
 
-body {
-  background-color: #09090b;
-  color: #f4f4f5;
-  overflow-x: hidden;
+@layer base {
+  body {
+    /* Updated text colors for higher contrast */
+    @apply bg-zinc-50 text-zinc-950 dark:bg-black dark:text-white overflow-x-hidden transition-colors duration-300;
+  }
 }
