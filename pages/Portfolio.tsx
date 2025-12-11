@@ -23,7 +23,7 @@ export const projects: Project[] = [
     description: 'A fully interactive 3D Digital Twin of my residential smart home. This dashboard integrates real-time IoT telemetry from MXChips onto a spatially accurate architectural model. It features a custom WebGL rendering engine built with React Three Fiber, allowing me to monitor home security, control smart devices, and visualize data in a browser-based 3D environment.',
     technologies: ['React Three Fiber', 'Three.js', 'TypeScript', 'WebGL', 'Azure IoT', 'Tailwind CSS'],
     imageUrl: 'https://www.iamadamnelson.com/images/project-2.JPG',
-    link: '/portfolio/project-2/demo', // Internal Route
+    link: '/portfolio/project-2/', // Internal Route
     liveUrl: 'https://www.iamadamnelson.com/#/portfolio/project-2/demo', // External Live Demo
     /* repo: 'https://github.com/iamadamnelson/' */
   }/* ,
