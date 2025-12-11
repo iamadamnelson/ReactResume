@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
-import { ArrowLeft, Activity, Home as HomeIcon, AlertTriangle, CheckCircle, Thermometer, Users, Zap, Shield, Wifi, Lock, Gauge, Camera, Warehouse, Fan, Sun, Moon, Download, Unlock, Cpu, Video, Server, Key } from 'lucide-react';
+import { ArrowLeft, Activity, Home as /* HomeIcon, AlertTriangle, CheckCircle, */ Thermometer, Users, /* Zap, Shield, */ Wifi, Lock, Gauge, /* Camera, */ Warehouse, /* Fan, */ Sun, Moon, /* Download, */ Unlock, Cpu, Video, /* Server, */ Key } from 'lucide-react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Edges, ContactShadows, Float, Html } from '@react-three/drei';
 import * as THREE from 'three';
@@ -144,7 +144,7 @@ const COLORS = {
 };
 
 // --- DATA GENERATOR (For Power BI) ---
-const generateHistoricalData = () => {
+/* const generateHistoricalData = () => {
   const days = 100;
   const samplesPerDay = 3; 
   const data = [];
@@ -224,7 +224,7 @@ const generateHistoricalData = () => {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-};
+}; */
 
 // --- 3D COMPONENTS ---
 
@@ -263,8 +263,8 @@ const ZoneMesh = ({
     <group position={data.position as [number, number, number]}>
       <mesh
         ref={meshRef}
-        onClick={(e) => { e.stopPropagation(); onClick(); }}
-        onPointerOver={(e) => { e.stopPropagation(); onHover(true); document.body.style.cursor = 'pointer'; }}
+        onClick={(e: { stopPropagation: () => void; }) => { e.stopPropagation(); onClick(); }}
+        onPointerOver={(e: { stopPropagation: () => void; }) => { e.stopPropagation(); onHover(true); document.body.style.cursor = 'pointer'; }}
         onPointerOut={() => { onHover(false); document.body.style.cursor = 'auto'; }}
       >
         <boxGeometry args={data.dimensions as [number, number, number]} />

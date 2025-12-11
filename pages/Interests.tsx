@@ -2,7 +2,7 @@ import React from 'react';
 import { PageTransition } from '../components/PageTransition';
 import { motion } from 'framer-motion';
 import { InterestItem } from '../types';
-import { Camera, Gamepad2, Mountain, Cpu, Plane, Music } from 'lucide-react';
+/* import { Camera, Gamepad2, Mountain, Cpu, Plane, Music } from 'lucide-react'; */
 
 const interests: InterestItem[] = [
 /*   {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
-import { ArrowLeft, ExternalLink, Github, Layers, Cpu, Code2, Globe, ShieldCheck, Zap } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github, Layers, Cpu, Code2, /* Globe, ShieldCheck, Zap */ } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const ProjectOne: React.FC = () => {
