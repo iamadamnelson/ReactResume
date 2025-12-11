@@ -24,7 +24,7 @@ export const projects: Project[] = [
     technologies: ['React Three Fiber', 'Three.js', 'TypeScript', 'WebGL', 'Azure IoT', 'Tailwind CSS'],
     imageUrl: 'https://picsum.photos/600/400?random=2',
     link: '/portfolio/project-2/demo', // Internal Route
-    liveUrl: 'https://www.iamadamnelson.com/portfolio/project-2/', // External Live Demo
+    liveUrl: 'https://www.iamadamnelson.com/#/portfolio/project-2/demo', // External Live Demo
     /* repo: 'https://github.com/iamadamnelson/' */
   }/* ,
   {
