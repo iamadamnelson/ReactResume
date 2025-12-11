@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageTransition } from '../components/PageTransition';
-import { ExternalLink, Github, Code2, ArrowRight, /* Layers */ } from 'lucide-react';
+import { ExternalLink, /* Github, */ Code2, ArrowRight, /* Layers */ } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Project } from '../types';
