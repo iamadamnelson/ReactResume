@@ -58,7 +58,7 @@ export const Portfolio: React.FC = () => {
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Portfolio</h1>
 {            <p className="text-zinc-700 dark:text-zinc-300 max-w-2xl font-medium text-lg">
-              Coming Soon! {/* A selection of my recent work in web development, data visualization, and UI design. */}
+              A selection of my recent work.
             </p>}
           </div>
 

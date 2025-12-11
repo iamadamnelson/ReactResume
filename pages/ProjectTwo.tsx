@@ -31,7 +31,7 @@ export const ProjectTwo: React.FC = () => {
               <span>Project 02</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-zinc-900 dark:text-white mb-6 leading-tight">
-              Personal Smart Home Digital Twin
+              Smart Home Digital Twin
             </h1>
             <p className="text-xl text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium mb-8">
 {/*               "I didn't just want a list of numbers; I wanted to see my home."
@@ -40,7 +40,7 @@ export const ProjectTwo: React.FC = () => {
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
-               {['React Three Fiber', 'Azure IoT Hub', 'MXChip DevKit', 'Power BI', 'WebGL'].map(tech => (
+               {['Azure IoT Hub', 'MXChip DevKit', 'Power BI', 'React Three Fiber', 'WebGL'].map(tech => (
                 <span key={tech} className="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 rounded-md text-sm font-semibold border border-zinc-200 dark:border-zinc-700">
                   {tech}
                 </span>
@@ -74,7 +74,7 @@ export const ProjectTwo: React.FC = () => {
           >
             <div className="absolute inset-0 bg-primary-500/10 blur-3xl rounded-full transform -translate-y-4"></div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800 aspect-video bg-zinc-100 dark:bg-zinc-900">
-              <img src="https://www.iamadamnelson.com/images/project-2.jpg" alt="Smart Home Dashboard" className="w-full h-full object-cover" />
+              <img src="https://www.iamadamnelson.com/images/project-2.JPG" alt="Smart Home Dashboard" className="w-full h-full object-cover" />
               
               {/* Play Overlay Hint */}
               <Link to="/portfolio/project-2/demo" className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 group">
