@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <h2 className="text-primary-600 dark:text-primary-400 font-bold tracking-wide uppercase text-sm mb-4">
-                Data, design, engineering and technology specialst
+                Data, design, engineering and technology specialist
               </h2>
               <h1 className="text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-black via-zinc-800 to-zinc-600 dark:from-white dark:via-zinc-200 dark:to-zinc-400 mb-6 leading-tight pb-2">
                 I am Adam Nelson.
@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
               {/* Updated paragraph color for high contrast */}
               <p className="text-zinc-800 dark:text-zinc-100 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 font-medium">
                 Highly accomplished and versatile Engineering and IT professional with a proven history of success in mission-critical environments. 
-                As a U.S. Army Veteran and former DoD Civil Servant with an active T3 Secret Clearance, my career has been defined by a commitment 
+                As a U.S. Army Veteran and former Department of the Army Civilian with an active T3 Secret Clearance, my career has been defined by a commitment 
                 to service and ensuring mission success. Seeking a strategic role that leverages my extensive expertise to solve highly complex, 
                 multi-disciplinary technical challenges and deliver high-impact, transformative results.
               </p>
