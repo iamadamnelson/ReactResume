@@ -7,7 +7,7 @@ import { Project } from '../types';
 
 // specific data for the 4 independent projects
 export const projects: Project[] = [
-  /* {
+  {
     id: '1',
     title: 'Azure Cloud Resume',
     description: 'An Azure cloud resume built to showcase my experience, skills and portfolio. This website features source control and CI/CD through GitHub, a custom DNS through Cloudfare, and security through Azure CDN.',
@@ -15,18 +15,18 @@ export const projects: Project[] = [
     imageUrl: 'https://picsum.photos/600/400?random=1',
     link: '/portfolio/project-1', // Internal Route
     liveUrl: 'https://www.iamadamnelson.com', // External Live Demo
-    repo: 'https://github.com/iamadamnelson/ReactResume'
+    /* repo: 'https://github.com/iamadamnelson/ReactResume' */
   },
 {
     id: '2',
     title: 'Smart Home Digital Twin',
-    description: 'A fully interactive 3D Digital Twin of my residential smart home. This dashboard integrates real-time IoT telemetry (temperature, energy, occupancy) onto a spatially accurate architectural model. It features a custom WebGL rendering engine built with React Three Fiber, allowing me to monitor home security, control smart devices, and visualize data in a browser-based 3D environment.',
+    description: 'A fully interactive 3D Digital Twin of my residential smart home. This dashboard integrates real-time IoT telemetry from MXChips onto a spatially accurate architectural model. It features a custom WebGL rendering engine built with React Three Fiber, allowing me to monitor home security, control smart devices, and visualize data in a browser-based 3D environment.',
     technologies: ['React Three Fiber', 'Three.js', 'TypeScript', 'WebGL', 'Azure IoT', 'Tailwind CSS'],
     imageUrl: 'https://picsum.photos/600/400?random=2',
-    link: '/portfolio/project-2', // Internal Route
+    link: '/portfolio/project-2/demo', // Internal Route
     liveUrl: 'https://www.iamadamnelson.com/portfolio/project-2/', // External Live Demo
-    repo: 'https://github.com/iamadamnelson/'
-  },
+    /* repo: 'https://github.com/iamadamnelson/' */
+  }/* ,
   {
     id: '3',
     title: 'E-Commerce Recommendation Engine',
@@ -131,14 +131,14 @@ export const Portfolio: React.FC = () => {
                     </a>
 
                     {/* 3. Source Code (External) */}
-                    <a 
+{/*                     <a 
                       href={project.repo} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-lg font-bold hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all shadow-sm"
                     >
                       Source Code <Github size={16} />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </motion.div>

@@ -54,14 +54,14 @@ export const ProjectOne: React.FC = () => {
               >
                 Live Demo <ExternalLink size={18} />
               </a>
-              <a 
+{/*               <a 
                 href="https://github.com/iamadamnelson/ReactResume" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-lg font-bold flex items-center gap-2 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all"
               >
                 Source Code <Github size={18} />
-              </a>
+              </a> */}
             </div>
           </motion.div>
 
@@ -102,7 +102,7 @@ export const ProjectOne: React.FC = () => {
             <section>
               <h2 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4 flex items-center gap-2">
                 <Cpu className="text-primary-500" />
-                Key Features (Coming Soon)
+                Technical Implementation (Coming Soon)
               </h2>
 {/*               <ul className="space-y-4 text-zinc-700 dark:text-zinc-300 font-medium">
                 <li className="flex gap-3">
