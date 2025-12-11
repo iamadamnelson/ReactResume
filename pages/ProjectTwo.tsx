@@ -74,7 +74,7 @@ export const ProjectTwo: React.FC = () => {
           >
             <div className="absolute inset-0 bg-primary-500/10 blur-3xl rounded-full transform -translate-y-4"></div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800 aspect-video bg-zinc-100 dark:bg-zinc-900">
-              <img src="https://picsum.photos/600/400?random=2" alt="Smart Home Dashboard" className="w-full h-full object-cover" />
+              <img src="https://www.iamadamnelson.com/images/project-2.jpg" alt="Smart Home Dashboard" className="w-full h-full object-cover" />
               
               {/* Play Overlay Hint */}
               <Link to="/portfolio/project-2/demo" className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 group">

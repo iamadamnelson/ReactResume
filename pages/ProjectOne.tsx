@@ -73,7 +73,7 @@ export const ProjectOne: React.FC = () => {
           >
             <div className="absolute inset-0 bg-primary-500/10 blur-3xl rounded-full transform -translate-y-4"></div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800 aspect-video bg-zinc-100 dark:bg-zinc-900">
-              <img src="https://picsum.photos/600/400?random=1" alt="Azure Cloud Resume Website" className="w-full h-full object-cover" />
+              <img src="https://www.iamadamnelson.com/images/project-1.png" alt="Azure Cloud Resume Website" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>

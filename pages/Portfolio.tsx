@@ -12,7 +12,7 @@ export const projects: Project[] = [
     title: 'Azure Cloud Resume',
     description: 'An Azure cloud resume built to showcase my experience, skills and portfolio. This website features source control and CI/CD through GitHub, a custom DNS through Cloudfare, and security through Azure CDN.',
     technologies: ['React', 'TypeScript', 'Tailwind', 'HTML', 'CSS', 'Azure', 'GitHub', 'Cloudfare'],
-    imageUrl: 'https://picsum.photos/600/400?random=1',
+    imageUrl: 'https://www.iamadamnelson.com/images/project-1.png',
     link: '/portfolio/project-1', // Internal Route
     liveUrl: 'https://www.iamadamnelson.com', // External Live Demo
     /* repo: 'https://github.com/iamadamnelson/ReactResume' */
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     title: 'Smart Home Digital Twin',
     description: 'A fully interactive 3D Digital Twin of my residential smart home. This dashboard integrates real-time IoT telemetry from MXChips onto a spatially accurate architectural model. It features a custom WebGL rendering engine built with React Three Fiber, allowing me to monitor home security, control smart devices, and visualize data in a browser-based 3D environment.',
     technologies: ['React Three Fiber', 'Three.js', 'TypeScript', 'WebGL', 'Azure IoT', 'Tailwind CSS'],
-    imageUrl: 'https://picsum.photos/600/400?random=2',
+    imageUrl: 'https://www.iamadamnelson.com/images/project-2.JPG',
     link: '/portfolio/project-2/demo', // Internal Route
     liveUrl: 'https://www.iamadamnelson.com/#/portfolio/project-2/demo', // External Live Demo
     /* repo: 'https://github.com/iamadamnelson/' */
