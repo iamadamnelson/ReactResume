@@ -9,13 +9,6 @@ import { Interests } from './pages/Interests';
 import { Contact } from './pages/Contact';
 import { DataStreamBackground } from './components/DataStreamBackground';
 
-// Import independent project pages
-import { ProjectOne } from './pages/ProjectOne';
-import { ProjectTwo } from './pages/ProjectTwo';
-import { SmartHomeDashboard } from './pages/SmartHomeDashboard'; // Import the new dashboard
-import { ProjectThree } from './pages/ProjectThree';
-import { ProjectFour } from './pages/ProjectFour';
-
 // Wrapper component to handle route change animations
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -25,18 +18,7 @@ const AnimatedRoutes: React.FC = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        
-        {/* Independent Project Routes */}
-        <Route path="/portfolio/project-1" element={<ProjectOne />} />
-        
-        {/* Project 2: Case Study and Demo */}
-        <Route path="/portfolio/project-2" element={<ProjectTwo />} />
-        <Route path="/portfolio/project-2/demo" element={<SmartHomeDashboard />} />
-        
-        <Route path="/portfolio/project-3" element={<ProjectThree />} />
-        <Route path="/portfolio/project-4" element={<ProjectFour />} />
-        
+        <Route path="/portfolio" element={<Portfolio />} />      
         <Route path="/interests" element={<Interests />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
