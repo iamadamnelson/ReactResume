@@ -2,51 +2,9 @@ import React from 'react';
 import { PageTransition } from '../components/PageTransition';
 import { motion } from 'framer-motion';
 import { InterestItem } from '../types';
-/* import { Camera, Gamepad2, Mountain, Cpu, Plane, Music } from 'lucide-react'; */
 
 const interests: InterestItem[] = [
-/*   {
-    id: '1',
-    title: 'Landscape Photography',
-    category: 'Creativity',
-    description: 'Capturing the world through a lens. I specialize in long-exposure landscapes and urban architecture photography.',
-    imageUrl: 'https://picsum.photos/600/400?random=10'
-  },
-  {
-    id: '2',
-    title: 'Hiking & Outdoors',
-    category: 'Adventure',
-    description: 'Disconnecting to reconnect. I enjoy multi-day backpacking trips and exploring national parks to maintain mental clarity.',
-    imageUrl: 'https://picsum.photos/600/600?random=11'
-  },
-  {
-    id: '3',
-    title: '3D Printing & Making',
-    category: 'Tech / DIY',
-    description: 'Designing and printing functional parts. From rapid prototyping engineering brackets to creating custom home automation mounts.',
-    imageUrl: 'https://picsum.photos/600/400?random=12'
-  },
-  {
-    id: '4',
-    title: 'Gaming & Sim Racing',
-    category: 'Hobby',
-    description: 'An enthusiast of strategy games and high-fidelity sim racing. It keeps my reflexes sharp and satisfies my competitive drive.',
-    imageUrl: 'https://picsum.photos/600/500?random=13'
-  },
-  {
-    id: '5',
-    title: 'International Travel',
-    category: 'Exploration',
-    description: 'Experiencing new cultures and perspectives. My recent trips include Japan, Iceland, and various locations across Europe.',
-    imageUrl: 'https://picsum.photos/600/400?random=14'
-  },
-  {
-    id: '6',
-    title: 'Home Automation',
-    category: 'Engineering',
-    description: 'Building a fully local, privacy-focused smart home using Home Assistant, Zigbee, and custom ESP32 microcontrollers.',
-    imageUrl: 'https://picsum.photos/600/600?random=15'
-  } */
+
 ];
 
 export const Interests: React.FC = () => {
@@ -59,7 +17,7 @@ export const Interests: React.FC = () => {
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Life & Interests</h1>
             <p className="text-zinc-700 dark:text-zinc-300 max-w-2xl font-medium text-lg">
-{/*               Beyond the professional work, here is a glimpse into what drives my creativity and keeps me grounded. */} Coming Soon!
+            {} Coming Soon!
             </p>
           </div>
 
@@ -104,9 +62,7 @@ export const Interests: React.FC = () => {
 
           {/* Optional Footer/Quote */}
           <div className="mt-24 text-center pb-12 opacity-80">
-{/*             <p className="text-xl italic font-serif text-zinc-600 dark:text-zinc-400">
-              "Family is not an important thing. It's everything." - Michael J. Fox
-            </p> */}
+          {}
           </div>
 
         </div>

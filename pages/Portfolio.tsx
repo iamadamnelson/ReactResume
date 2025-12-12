@@ -1,52 +1,12 @@
 import React from 'react';
 import { PageTransition } from '../components/PageTransition';
-import { ExternalLink, /* Github, */ Code2, ArrowRight, /* Layers */ } from 'lucide-react';
+import { ExternalLink, Github, Code2, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Project } from '../types';
 
-// specific data for the 4 independent projects
 export const projects: Project[] = [
-  {
-    id: '1',
-    title: 'Azure Cloud Resume',
-    description: 'An Azure cloud resume built to showcase my experience, skills and portfolio. This website features source control and CI/CD through GitHub, a custom DNS through Cloudfare, and security through Azure CDN.',
-    technologies: ['React', 'TypeScript', 'Tailwind', 'HTML', 'CSS', 'Azure', 'GitHub', 'Cloudfare'],
-    imageUrl: 'https://www.iamadamnelson.com/images/project-1.png',
-    link: '/portfolio/project-1', // Internal Route
-    liveUrl: 'https://www.iamadamnelson.com', // External Live Demo
-    /* repo: 'https://github.com/iamadamnelson/ReactResume' */
-  },
-{
-    id: '2',
-    title: 'Smart Home Digital Twin',
-    description: 'A fully interactive 3D Digital Twin of my residential smart home. This dashboard integrates real-time IoT telemetry from MXChips onto a spatially accurate architectural model. It features a custom WebGL rendering engine built with React Three Fiber, allowing me to monitor home security, control smart devices, and visualize data in a browser-based 3D environment.',
-    technologies: ['React Three Fiber', 'Three.js', 'TypeScript', 'WebGL', 'Azure IoT', 'Tailwind CSS'],
-    imageUrl: 'https://www.iamadamnelson.com/images/project-2.JPG',
-    link: '/portfolio/project-2/', // Internal Route
-    liveUrl: 'https://www.iamadamnelson.com/#/portfolio/project-2/demo', // External Live Demo
-    /* repo: 'https://github.com/iamadamnelson/' */
-  }/* ,
-  {
-    id: '3',
-    title: 'E-Commerce Recommendation Engine',
-    description: 'A headless e-commerce frontend integrated with a Python-based machine learning engine to provide personalized product recommendations.',
-    technologies: ['React', 'Python', 'TensorFlow', 'GraphQL'],
-    imageUrl: 'https://picsum.photos/600/400?random=3',
-    link: '/portfolio/project-3', // Internal Route
-    liveUrl: 'https://shop.iamadamnelson.com', // External Live Demo
-    repo: 'https://github.com/adamnelson/ecommerce-ai'
-  },
-  {
-    id: '4',
-    title: 'HealthVitals Mobile App',
-    description: 'Cross-platform mobile application for tracking patient vitals and medication adherence. Compliant with HIPAA standards.',
-    technologies: ['React Native', 'Firebase', 'Redux Toolkit'],
-    imageUrl: 'https://picsum.photos/600/400?random=4',
-    link: '/portfolio/project-4', // Internal Route
-    liveUrl: 'https://healthvitals.iamadamnelson.com', // External Live Demo
-    repo: 'https://github.com/adamnelson/health-vitals'
-  } */
+  
 ];
 
 export const Portfolio: React.FC = () => {
@@ -58,7 +18,7 @@ export const Portfolio: React.FC = () => {
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Portfolio</h1>
 {            <p className="text-zinc-700 dark:text-zinc-300 max-w-2xl font-medium text-lg">
-              A selection of my recent work.
+              Coming Soon.
             </p>}
           </div>
 
@@ -131,14 +91,14 @@ export const Portfolio: React.FC = () => {
                     </a>
 
                     {/* 3. Source Code (External) */}
-{/*                     <a 
+{                    <a 
                       href={project.repo} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-lg font-bold hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-all shadow-sm"
                     >
                       Source Code <Github size={16} />
-                    </a> */}
+                    </a>}
                   </div>
                 </div>
               </motion.div>
