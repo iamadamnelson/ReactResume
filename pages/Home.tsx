@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageTransition } from '../components/PageTransition';
-/* import { Linkedin } from 'lucide-react'; */
+import { Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Home: React.FC = () => {
@@ -33,9 +33,9 @@ export const Home: React.FC = () => {
                 multi-disciplinary technical challenges and deliver high-impact, transformative results.
               </p>
 
-{/*               <div className="mt-12 flex gap-6 justify-center lg:justify-start">
+              <div className="mt-12 flex gap-6 justify-center lg:justify-start">
                 <a href="https://linkedin.com/in/adam-w-nelson" target="_blank" rel="noreferrer" className="text-zinc-600 hover:text-primary-600 dark:text-zinc-300 dark:hover:text-white transition-colors"><Linkedin size={28} /></a>
-              </div> */}
+              </div>
             </motion.div>
           </div>
 
