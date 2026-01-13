@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <h2 className="text-primary-600 dark:text-primary-400 font-bold tracking-wide uppercase text-sm mb-4">
-                Engineering Technology Specialist
+                
               </h2>
               <h1 className="text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-black via-zinc-800 to-zinc-600 dark:from-white dark:via-zinc-200 dark:to-zinc-400 mb-6 leading-tight pb-2">
                 I am Adam Nelson.
