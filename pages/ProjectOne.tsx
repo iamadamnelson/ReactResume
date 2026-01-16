@@ -90,7 +90,7 @@ export const ProjectTwo: React.FC = () => {
               I programmed an MXChip controller to capture telemetry and stream it directly to Azure IoT Hub. To handle the data, I wrote custom Azure Functions in Node.js—one to securely manage Autodesk authentication tokens and another to act as an ingestion engine. This recorder function intercepts the incoming sensor messages, enriches them with real-time conditions from the OpenWeatherMap API, and stores the combined dataset in Cosmos DB.
             </p>
             <p className="mt-4">
-              On the frontend, I built a React application to visualize this pipeline, deployed to GitGub/Vercel and added a c. I integrated the Autodesk Platform Services (APS) Viewer to render a representative 3D model of my house and wrote custom extensions to overlay the live data. This involved mapping sensor readings to specific 3D coordinates, rendering interactive sprites, and feeding the enriched historical data into dynamic charts for real-time analysis.
+              On the frontend, I built a React application to visualize this pipeline, deploying it via GitHub and Vercel, and configuring a custom DNS CNAME. I integrated the Autodesk Platform Services (APS) Viewer to render a representative 3D model of my house and wrote custom extensions to overlay the live data. This involved mapping sensor readings to specific 3D coordinates, rendering interactive sprites, and feeding the enriched historical data into dynamic charts for real-time analysis.
             </p>
           </div>
         </section>
