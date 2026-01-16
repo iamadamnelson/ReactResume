@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageTransition } from '../components/PageTransition';
-import { Linkedin, Github } from 'lucide-react';
+import { Linkedin, /* Github */ } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Home: React.FC = () => {
@@ -43,14 +43,14 @@ export const Home: React.FC = () => {
     <Linkedin size={28} />
   </a>
 
-  <a
+{/*   <a
     href="https://github.com/iamadamnelson"
     target="_blank"
     rel="noreferrer"
     className="text-zinc-600 hover:text-primary-600 dark:text-zinc-300 dark:hover:text-white transition-colors"
   >
     <Github size={28} />
-  </a>
+  </a> */}
 </div>
             </motion.div>
           </div>

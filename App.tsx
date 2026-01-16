@@ -10,8 +10,8 @@ import { Contact } from './pages/Contact';
 import { DataStreamBackground } from './components/DataStreamBackground';
 
 // Import independent project pages
-import { ProjectOne } from './pages/ProjectOne.tsx';
-import { ProjectTwo } from './pages/ProjectTwo.tsx';
+/* import { ProjectOne } from './pages/ProjectOne.tsx';
+import { ProjectTwo } from './pages/ProjectTwo.tsx'; */
 
 // Wrapper component to handle route change animations
 const AnimatedRoutes: React.FC = () => {
@@ -23,8 +23,8 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio />} />   
-        <Route path="/portfolio/project-1" element={<ProjectOne />} />
-        <Route path="/portfolio/project-2" element={<ProjectTwo />} />   
+{/*         <Route path="/portfolio/project-1" element={<ProjectOne />} />
+        <Route path="/portfolio/project-2" element={<ProjectTwo />} />  */}  
         <Route path="/interests" element={<Interests />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

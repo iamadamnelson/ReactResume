@@ -6,46 +6,7 @@ import { Link } from 'react-router-dom';
 import { Project } from '../types';
 
 export const projects: Project[] = [
-  {
-    id: '1',
-    title: 'Azure Cloud Resume',
-    description: 'An Azure cloud resume built to showcase my experience, skills and portfolio. This website features source control and CI/CD through GitHub, a custom DNS through Cloudfare, and security through Azure CDN.',
-    technologies: ['React', 'TypeScript', 'Tailwind', 'HTML', 'CSS', 'Azure', 'GitHub', 'Cloudfare'],
-    imageUrl: 'https://www.iamadamnelson.com/images/project-1.png',
-    link: '/portfolio/project-1', 
-    liveUrl: 'https://www.iamadamnelson.com', 
-    repo: 'https://github.com/iamadamnelson/ReactResume'
-  },
-{
-    id: '2',
-    title: 'IoT Sensor Dashboard & Weather Enrichment Pipeline',
-    description: 'A full-stack IoT solution that creates a Digital Twin of a home environment. This project ingests real-time telemetry from an MXChip sensor, enriches it with live external weather data via Azure Functions, and visualizes the correlation in a 3D viewer.',
-    technologies: ['React', 'Azure IoT Hub', 'Azure Functions', 'Cosmos DB', 'MXChip', 'Autodesk APS', 'OpenWeatherMap'],
-    imageUrl: 'https://www.iamadamnelson.com/images/project-2.JPG',
-    link: '/portfolio/project-2/', 
-    liveUrl: 'https://iot-sensor-dashboard.iamadamnelson.com/', 
-    repo: 'https://github.com/iamadamnelson/IOT-Sensor-Dashboard'
-  }/* ,
-  {
-    id: '3',
-    title: 'E-Commerce Recommendation Engine',
-    description: 'A headless e-commerce frontend integrated with a Python-based machine learning engine to provide personalized product recommendations.',
-    technologies: ['React', 'Python', 'TensorFlow', 'GraphQL'],
-    imageUrl: 'https://picsum.photos/600/400?random=3',
-    link: '/portfolio/project-3', 
-    liveUrl: 'https://shop.iamadamnelson.com', 
-    repo: 'https://github.com/adamnelson/ecommerce-ai'
-  },
-  {
-    id: '4',
-    title: 'HealthVitals Mobile App',
-    description: 'Cross-platform mobile application for tracking patient vitals and medication adherence. Compliant with HIPAA standards.',
-    technologies: ['React Native', 'Firebase', 'Redux Toolkit'],
-    imageUrl: 'https://picsum.photos/600/400?random=4',
-    link: '/portfolio/project-4', 
-    liveUrl: 'https://healthvitals.iamadamnelson.com', 
-    repo: 'https://github.com/adamnelson/health-vitals'
-  } */
+  
 ];
 
 export const Portfolio: React.FC = () => {
@@ -56,9 +17,9 @@ export const Portfolio: React.FC = () => {
         <div className="relative z-10 max-w-6xl mx-auto pb-12">
           <div className="mb-12">
             <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Portfolio</h1>
-{/* {            <p className="text-zinc-700 dark:text-zinc-300 max-w-2xl font-medium text-lg">
+{            <p className="text-zinc-700 dark:text-zinc-300 max-w-2xl font-medium text-lg">
               Coming Soon.
-            </p>} */}
+            </p>}
           </div>
 
           <div className="space-y-24">
@@ -78,7 +39,7 @@ export const Portfolio: React.FC = () => {
                      <img 
                       src={project.imageUrl} 
                       alt={project.title} 
-                      className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
                   </div>
                 </div>
