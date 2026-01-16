@@ -4,14 +4,14 @@ import { AnimatePresence } from 'framer-motion';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { Resume } from './pages/Resume';
-import { Portfolio } from './pages/Portfolio.tsx';
+import { Portfolio } from './pages/Portfolio';
 import { Interests } from './pages/Interests';
 import { Contact } from './pages/Contact';
 import { DataStreamBackground } from './components/DataStreamBackground';
 
 // Import independent project pages
-/* import { ProjectOne } from './pages/ProjectOne.tsx';
-import { ProjectTwo } from './pages/ProjectTwo.tsx'; */
+import { ProjectTwo } from './pages/ProjectOne';
+import { ProjectOne } from './pages/ProjectTwo';
 
 // Wrapper component to handle route change animations
 const AnimatedRoutes: React.FC = () => {
@@ -23,8 +23,8 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<Portfolio />} />   
-{/*         <Route path="/portfolio/project-1" element={<ProjectOne />} />
-        <Route path="/portfolio/project-2" element={<ProjectTwo />} />  */}  
+        <Route path="/portfolio/project-1" element={<ProjectTwo />} />
+        <Route path="/portfolio/project-2" element={<ProjectOne />} />   
         <Route path="/interests" element={<Interests />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { PageTransition } from '../components/PageTransition';
-import { Linkedin, /* Github */ } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Home: React.FC = () => {
   return (
     <PageTransition>
-      {/* Background Animation - Container relative to ensure absolute positioning works within page bounds */}
+      {/* Background Animation */}
       <div className="relative">
 
         {/* Content Layer: z-10 */}
@@ -20,12 +20,11 @@ export const Home: React.FC = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
             >
               <h2 className="text-primary-600 dark:text-primary-400 font-bold tracking-wide uppercase text-sm mb-4">
-                
+
               </h2>
               <h1 className="text-3xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-black via-zinc-800 to-zinc-600 dark:from-white dark:via-zinc-200 dark:to-zinc-400 mb-6 leading-tight pb-2">
                 I am Adam Nelson.
               </h1>
-              {/* Updated paragraph color for high contrast */}
               <p className="text-zinc-800 dark:text-zinc-100 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 font-medium">
                 Highly accomplished and versatile Engineering and IT professional with a proven history of success in mission-critical environments.
                 As a U.S. Army Veteran and former Department of the Army Civilian with an active T3 Secret Clearance, my career has been defined by a commitment
@@ -33,25 +32,25 @@ export const Home: React.FC = () => {
                 multi-disciplinary technical challenges and deliver high-impact, transformative results.
               </p>
 
-<div className="mt-12 flex gap-6 justify-center lg:justify-start">
-  <a
-    href="https://linkedin.com/in/adam-w-nelson"
-    target="_blank"
-    rel="noreferrer"
-    className="text-zinc-600 hover:text-primary-600 dark:text-zinc-300 dark:hover:text-white transition-colors"
-  >
-    <Linkedin size={28} />
-  </a>
+              <div className="mt-12 flex gap-6 justify-center lg:justify-start">
+                <a
+                  href="https://linkedin.com/in/adam-w-nelson"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-zinc-600 hover:text-primary-600 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                >
+                  <Linkedin size={28} />
+                </a>
 
-{/*   <a
-    href="https://github.com/iamadamnelson"
-    target="_blank"
-    rel="noreferrer"
-    className="text-zinc-600 hover:text-primary-600 dark:text-zinc-300 dark:hover:text-white transition-colors"
-  >
-    <Github size={28} />
-  </a> */}
-</div>
+                {<a
+                  href="https://github.com/iamadamnelson"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-zinc-600 hover:text-primary-600 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                >
+                  <Github size={28} />
+                </a>}
+              </div>
             </motion.div>
           </div>
 
