@@ -22,9 +22,9 @@ const AnimatedRoutes: React.FC = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />   
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/project-1" element={<ProjectTwo />} />
-        <Route path="/portfolio/project-2" element={<ProjectOne />} />   
+        <Route path="/portfolio/project-2" element={<ProjectOne />} />
         <Route path="/interests" element={<Interests />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
@@ -39,7 +39,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as 'dark' | 'light' | null;
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme) {
       setTheme(savedTheme);
       document.documentElement.classList.toggle('dark', savedTheme === 'dark');
@@ -62,13 +62,13 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <div className="min-h-screen bg-zinc-50 dark:bg-black text-zinc-900 dark:text-white relative selection:bg-primary-500 selection:text-white transition-colors duration-300">
-        
-        {/* Background Elements - Fixed Viewport Coverage */}
+
+        {/* Background Elements */}
         <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
           {/* Ambient Color Blobs */}
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-primary-500/10 dark:bg-primary-900/10 blur-[120px]"></div>
           <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-blue-500/10 dark:bg-blue-900/10 blur-[120px]"></div>
-          
+
           {/* Animated Data Stream Overlay */}
           <DataStreamBackground />
         </div>
