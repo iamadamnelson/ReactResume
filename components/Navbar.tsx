@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, FileText, Briefcase, Mail, Sun, Moon, Camera } from 'lucide-react';
+import { Home, FileText, Briefcase, Mail, Sun, Moon, /* Camera */ } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navItems = [
