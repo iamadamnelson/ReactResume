@@ -7,7 +7,7 @@ const navItems = [
   { path: '/', label: 'Home', icon: <Home size={20} /> },
   { path: '/resume', label: 'Resume', icon: <FileText size={20} /> },
   { path: '/portfolio', label: 'Portfolio', icon: <Briefcase size={20} /> },
-  { path: '/interests', label: 'Interests', icon: <Camera size={20} /> },
+  // { path: '/interests', label: 'Interests', icon: <Camera size={20} /> },
   { path: '/contact', label: 'Contact', icon: <Mail size={20} /> },
 ];
 

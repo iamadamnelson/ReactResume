@@ -49,9 +49,9 @@ export const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Let's work together.</h1>
+              <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-4">Contact</h1>
               <p className="text-zinc-700 dark:text-zinc-300 text-lg font-medium">
-                I'm currently available for full-time opportunities.
+                Submit the form or reach out with the information below.
               </p>
             </div>
 
@@ -62,7 +62,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-zinc-500 dark:text-zinc-400">Email</h3>
-                  <p className="text-zinc-900 dark:text-white font-bold">iamadamnelson@gmail.com</p>
+                  <p className="text-zinc-900 dark:text-white font-bold">nelson118@gmail.com</p>
                 </div>
               </div>
 

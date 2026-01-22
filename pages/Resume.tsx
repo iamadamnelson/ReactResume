@@ -14,7 +14,6 @@ export const Resume: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-zinc-300 dark:border-zinc-700 pb-8 transition-colors duration-300">
             <div>
               <h1 className="text-4xl font-bold text-zinc-900 dark:text-white mb-2">Resume</h1>
-              <p className="text-zinc-700 dark:text-zinc-300 font-medium">Review my professional journey.</p>
             </div>
 
             <div className="flex gap-3">
@@ -42,7 +41,7 @@ export const Resume: React.FC = () => {
             <div className="lg:col-span-1 p-6 rounded-2xl bg-white/80 dark:bg-zinc-900/80 border border-zinc-300 dark:border-zinc-700 backdrop-blur-md shadow-sm">
               <h3 className="text-xl font-bold text-zinc-900 dark:text-white mb-4">Interactive Resume</h3>
               <p className="text-zinc-800 dark:text-zinc-200 mb-4 text-sm leading-relaxed font-medium">
-                Instead of scrolling a list, I've visualized my experience using Microsoft Power BI.
+                I've visualized my resume using Microsoft Power BI, a lot of DAX, and HTML.
                 Interact with the dashboard to explore my skills and experience. Or download a
                 traditional copy of my resume in .docx or .pdf file above.
               </p>

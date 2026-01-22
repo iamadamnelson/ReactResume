@@ -5,7 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { Resume } from './pages/Resume';
 import { Portfolio } from './pages/Portfolio';
-import { Interests } from './pages/Interests';
+// import { Interests } from './pages/Interests';
 import { Contact } from './pages/Contact';
 import { DataStreamBackground } from './components/DataStreamBackground';
 
@@ -25,7 +25,7 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/project-1" element={<ProjectTwo />} />
         <Route path="/portfolio/project-2" element={<ProjectOne />} />
-        <Route path="/interests" element={<Interests />} />
+        {/* <Route path="/interests" element={<Interests />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </AnimatePresence>
