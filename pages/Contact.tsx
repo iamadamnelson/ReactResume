@@ -82,7 +82,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-zinc-500 dark:text-zinc-400">Location</h3>
-                  <p className="text-zinc-900 dark:text-white font-bold">Newton, Alabama</p>
+                  <p className="text-zinc-900 dark:text-white font-bold">Alabama, United States</p>
                 </div>
               </div>
             </div>
